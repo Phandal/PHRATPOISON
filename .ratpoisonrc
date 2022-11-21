@@ -13,8 +13,6 @@ definekey root S-b exec google-chrome-stable
 
 addhook switchwin windows
 addhook switchframe info
-addhook switchwin banish
-addhook switchframe banish
 
 startup_message off
 
