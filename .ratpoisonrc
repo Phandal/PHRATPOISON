@@ -12,6 +12,7 @@ definekey root e exec emacsclient -n -c
 definekey root S-b exec google-chrome-stable
 
 addhook switchwin windows
+addhook switchframe info
 addhook switchwin banish
 addhook switchframe banish
 
@@ -26,4 +27,4 @@ set bgcolor #000000
 set fwcolor #5F8787
 set msgwait 3
 
-set bargravity nw
+set bargravity ne
