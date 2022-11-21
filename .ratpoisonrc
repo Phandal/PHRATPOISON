@@ -1,3 +1,5 @@
+chdir
+
 definekey top XF86AudioLowerVolume exec pamixer -d 2; ratpoison -c "echo $(pamixer --get-volume-human)"
 definekey top XF86AudioRaiseVolume exec pamixer -i 2; ratpoison -c "echo $(pamixer --get-volume-human)"
 definekey top XF86AudioMute exec pamixer -t; ratpoison -c "echo $(pamixer --get-volume-human)"
