@@ -9,7 +9,7 @@ definekey top XF86AudioPrev exec playerctl --player=spotify previous; ratpoison 
 definekey top XF86AudioPlay exec playerctl --player=spotify play-pause; ratpoison -c "echo Play/Pause"
 
 definekey root e exec emacsclient -n -c
-definekey root S-b exec google-chrome-stable
+definekey root B exec google-chrome-stable
 
 addhook switchwin windows
 addhook switchframe info
