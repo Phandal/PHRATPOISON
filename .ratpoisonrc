@@ -10,6 +10,10 @@ definekey top XF86AudioPlay exec playerctl --player=spotify play-pause; ratpoiso
 
 definekey root e exec emacsclient -n -c
 definekey root B exec google-chrome-stable
+undefinekey root c
+definekey root c exec st
+undefinekey root exclam
+definekey root exclam exec dmenu_run
 
 addhook switchwin windows
 addhook switchframe info
@@ -24,5 +28,6 @@ set fgcolor #999999
 set bgcolor #000000
 set fwcolor #5F8787
 set msgwait 3
+set framesels 123456
 
 set bargravity ne
