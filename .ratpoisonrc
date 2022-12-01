@@ -1,3 +1,5 @@
+alias setfont exec ratpoison -c "set font JetBrainsMono-Nerd-Font-10"
+
 chdir
 
 definekey top XF86AudioLowerVolume exec pamixer -d 2; ratpoison -c "echo $(pamixer --get-volume-human)"
@@ -12,15 +14,11 @@ definekey root e exec emacsclient -n -c
 definekey root B exec google-chrome-stable
 undefinekey root c
 definekey root c exec st
-undefinekey root exclam
-definekey root exclam exec dmenu_run
-
-addhook switchwin windows
-addhook switchframe info
+definekey top M-space exec dmenu_run -fn "JetBrainsMono Nerd Font:pixelsize=12:antialias=true:autohint=true" -nb "#000000" -nf "#999999" -sb "#5F8787" -sf "#000000"
 
 startup_message off
 
-set font JetBrainsMono-Nerd-Font-10
+exec ratpoison -c "setfont"
 set wingravity c
 set inputwidth 500
 
@@ -29,5 +27,4 @@ set bgcolor #000000
 set fwcolor #5F8787
 set msgwait 3
 set framesels 123456
-
-set bargravity ne
+set bargravity c
