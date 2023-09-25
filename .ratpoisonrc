@@ -15,6 +15,7 @@ definekey root B exec google-chrome-stable
 undefinekey root c
 definekey root c exec st
 definekey top M-space exec dmenu_run -fn "Iosevka Nerd Font Mono:pixelsize=13:antialias=true:autohint=true" -nb "#2E3440" -nf "#D8DEE9" -sb "#4C566A" -sf "#2E3440"
+definekey top M-Tab focus
 
 startup_message off
 
