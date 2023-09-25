@@ -1,4 +1,4 @@
-alias setfont exec ratpoison -c "set font JetBrainsMono-Nerd-Font-10"
+alias setfont exec ratpoison -c "set font Iosevka-Nerd-Font-Mono-10"
 
 chdir
 
@@ -14,7 +14,7 @@ definekey root e exec emacsclient -n -c
 definekey root B exec google-chrome-stable
 undefinekey root c
 definekey root c exec st
-definekey top M-space exec dmenu_run -fn "JetBrainsMono Nerd Font:pixelsize=12:antialias=true:autohint=true" -nb "#000000" -nf "#999999" -sb "#5F8787" -sf "#000000"
+definekey top M-space exec dmenu_run -fn "Iosevka Nerd Font Mono:pixelsize=13:antialias=true:autohint=true" -nb "#2E3440" -nf "#D8DEE9" -sb "#4C566A" -sf "#2E3440"
 
 startup_message off
 
@@ -22,9 +22,10 @@ exec ratpoison -c "setfont"
 set wingravity c
 set inputwidth 500
 
-set fgcolor #999999
-set bgcolor #000000
-set fwcolor #5F8787
+set fgcolor #D8DEE9
+set bgcolor #2E3440
+set fwcolor #4C566A
 set msgwait 3
 set framesels 123456
 set bargravity c
+set winname class
