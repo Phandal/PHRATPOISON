@@ -10,17 +10,21 @@ definekey top XF86AudioNext exec playerctl --player=spotify next; ratpoison -c "
 definekey top XF86AudioPrev exec playerctl --player=spotify previous; ratpoison -c "echo Previous Song"
 definekey top XF86AudioPlay exec playerctl --player=spotify play-pause; ratpoison -c "echo Play/Pause"
 
+definekey top XF86MonBrightnessUp exec brightnessctl s +10%
+definekey top XF86MonBrightnessDown exec brightnessctl s 10%-
+
 definekey root e exec emacsclient -n -c
 definekey root B exec google-chrome-stable
 
 undefinekey root c
-definekey root c exec st
+definekey root c exec alacritty
 undefinekey root N
 definekey root less nextscreen
 undefinekey root P
 definekey root greater prevscreen
 
-definekey top M-space exec dmenu_run -fn "Iosevka Nerd Font Mono:pixelsize=13:antialias=true:autohint=true" -nb "#2E3440" -nf "#D8DEE9" -sb "#4C566A" -sf "#2E3440"
+# definekey top M-space exec dmenu_run -fn "Iosevka Nerd Font Mono:pixelsize=13:antialias=true:autohint=true" -nb "#2E3440" -nf "#D8DEE9" -sb "#4C566A" -sf "#2E3440"
+definekey top M-space exec rofi -show combi
 definekey top M-Tab focus
 
 startup_message off
