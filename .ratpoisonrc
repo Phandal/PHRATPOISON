@@ -17,6 +17,34 @@ definekey top XF86MonBrightnessDown exec brightnessctl s 10%-
 definekey root e exec emacsclient -n -c
 definekey root B exec google-chrome-stable
 
+# Unbinding Default Keys
+undefinekey root C-A
+undefinekey root C-K
+undefinekey root C-Return
+undefinekey root C-a
+undefinekey root C-b
+undefinekey root C-c
+undefinekey root C-exclam
+undefinekey root C-i
+undefinekey root C-k
+undefinekey root C-l
+undefinekey root C-m
+undefinekey root C-n
+undefinekey root C-p
+undefinekey root C-p
+undefinekey root C-apostrophe
+undefinekey root C-Space
+undefinekey root C-v
+undefinekey root C-V
+undefinekey root C-w
+undefinekey root C-s
+undefinekey root C-S
+undefinekey root C-f
+undefinekey root C-r
+undefinekey root C-underscore
+undefinekey root C-u
+undefinekey root C-x
+
 undefinekey root c
 definekey root c exec alacritty
 undefinekey root N
