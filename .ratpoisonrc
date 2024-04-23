@@ -22,6 +22,7 @@ undefinekey root C-A
 undefinekey root C-K
 undefinekey root C-Return
 undefinekey root C-a
+undefinekey root b
 undefinekey root C-b
 undefinekey root C-c
 undefinekey root C-exclam
@@ -51,6 +52,7 @@ undefinekey root N
 definekey root less nextscreen
 undefinekey root P
 definekey root greater prevscreen
+definekey root b exec ratpoison -c "echo $(cat /sys/class/power_supply/BAT0/capacity)%"
 
 definekey top s-space launch
 definekey top s-Tab focus
