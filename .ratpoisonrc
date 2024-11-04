@@ -15,7 +15,8 @@ definekey top XF86MonBrightnessUp exec brightnessctl s +10%
 definekey top XF86MonBrightnessDown exec brightnessctl s 10%-
 
 definekey root e exec emacsclient -n -c
-definekey root B exec google-chrome-stable
+# definekey root B exec google-chrome-stable
+definekey root B exec brave
 
 # Unbinding Default Keys
 undefinekey root C-A
