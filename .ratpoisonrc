@@ -7,9 +7,9 @@ definekey top XF86AudioLowerVolume exec pamixer -d 2; ratpoison -c "echo $(pamix
 definekey top XF86AudioRaiseVolume exec pamixer -i 2; ratpoison -c "echo $(pamixer --get-volume-human)"
 definekey top XF86AudioMute exec pamixer -t; ratpoison -c "echo $(pamixer --get-volume-human)"
 
-definekey top XF86AudioNext exec playerctl next; ratpoison -c "echo Next Song"
-definekey top XF86AudioPrev exec playerctl previous; ratpoison -c "echo Previous Song"
-definekey top XF86AudioPlay exec playerctl play-pause; ratpoison -c "echo Play/Pause"
+definekey top XF86AudioNext exec playerctl next -i Quiet_HP; ratpoison -c "echo Next Song"
+definekey top XF86AudioPrev exec playerctl previous -i Quiet_HP; ratpoison -c "echo Previous Song"
+definekey top XF86AudioPlay exec playerctl play-pause -i Quiet_HP; ratpoison -c "echo Play/Pause"
 # definekey top XF86AudioNext exec playerctl --player=spotify next; ratpoison -c "echo Next Song"
 # definekey top XF86AudioPrev exec playerctl --player=spotify previous; ratpoison -c "echo Previous Song"
 # definekey top XF86AudioPlay exec playerctl --player=spotify play-pause; ratpoison -c "echo Play/Pause"
