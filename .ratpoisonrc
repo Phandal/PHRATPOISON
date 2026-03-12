@@ -1,5 +1,5 @@
 alias setfont exec ratpoison -c "set font Iosevka-Nerd-Font-Mono-10"
-alias launch exec dmenu_run -fn "Iosevka Nerd Font Mono:pixelsize=13:antialias=true:autohint=true" -nb "#282828" -nf "#ebdbb2" -sb "#458588" -sf "#ebdbb2"
+alias launch exec dmenu_run -fn "Iosevka Nerd Font Mono:pixelsize=13:antialias=true:autohint=true" -nb "#000000" -nf "#C1C1C1" -sb "#7799BB" -sf "#000000"
 
 chdir
 
