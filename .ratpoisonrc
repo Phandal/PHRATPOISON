@@ -51,7 +51,7 @@ undefinekey root C-u
 undefinekey root C-x
 
 undefinekey root c
-definekey root c exec alacritty
+definekey root c exec ghostty
 undefinekey root N
 definekey root less nextscreen
 undefinekey root P
@@ -67,9 +67,9 @@ exec ratpoison -c "setfont"
 set wingravity c
 set inputwidth 500
 
-set fgcolor #ebdbb2
-set bgcolor #282828
-set fwcolor #458588
+set fgcolor #C1C1C1
+set bgcolor #000000
+set fwcolor #444444
 set msgwait 3
 set framesels 123456
 set bargravity c
